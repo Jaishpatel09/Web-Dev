@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hii{
+            height: 100px;
+            width: 50px;
+            
+            border-radius: 50%;
+            display:inline-block;
+            animation-name: bounce;
+            animation-timing-function: 100ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        #one{
+            background-color: red;
+            animation-duration: 900ms;
+        }
+        @keyframes bounce{
+            0%{
+                 transform: translateY(0px);
+            }
+            100%{
+                transform:translateY(85vh)  ;   
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div>Welcom To Balloon Party</div> -->
+    <div id="one" class="hii"></div>
+    <div id="two" class="hii"></div>
+    <div id="three" class="hii"></div>
+    <div id="four" class="hii"></div>
+
+</body>
+</html>
