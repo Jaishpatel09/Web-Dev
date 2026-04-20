@@ -13,3 +13,12 @@ span{
 h1{
     background-color: cyan;
 }
+ul{
+    background-color: yellow;
+}
+ol{
+    background-color: rgb(0, 26, 255);
+}
+li{
+    background-color: darkmagenta;
+}
