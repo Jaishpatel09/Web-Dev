@@ -8,6 +8,7 @@
 <body>
     <h1>Hello....!!</h1>
     <script>
+        
     //  let b=20
     //  {
     //     let b=100
@@ -36,18 +37,34 @@
         id:10,
         name:"Jaish",
         isPass:true,
-        sum:function(){
-            // console.log("Hii Dosto..!");
-            console.log(this);
-            
+        // sum:function(){
+        //     // console.log("Hii Dosto..!");
+        //     console.log(this.id);
+         
+        // }
 
-            
+        sum:()=>{
+           console.log(this.id); // this not working in arrow function 
+           
         }
 
      }
-     
-    student.sum()
+     student.sum()
 
+    //  for(let key in student)
+     
+
+    // student.sum()
+
+    // console.log(this);
+    
+    // 'use strict'
+    // function sum(){
+    //     console.log(this);
+        
+    // }
+    // sum()
+    
      
 
 
