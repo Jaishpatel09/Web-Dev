@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        .red{
+            color: rgb(0, 213, 255);
+        }
+        /* #green{
+            color: blueviolet;
+        } */
+        /* Child Selector */
+        div > p{
+            color: aqua;
+            background-color: blue;
+        }
+
+        /* Universal Selector */
+        *{
+
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: rgb(28, 220, 242);
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: red;
+        }
+
+        a:hover{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">I am Jaish Patel</div>
+
+    <div id="green">
+        <p>This Is a Paragraph </p>
+        Hii Kaise hai aap log</div>
+   
+      <a href="https://youtu.be/1cEG1T8beO4">YouTube</a>  
+      <a href="https://www.google.com/?zx=1778784271980">Google</a>  
+
+</body>
+</html>
