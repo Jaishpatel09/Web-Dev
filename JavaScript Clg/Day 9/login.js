@@ -17,3 +17,37 @@ formdata.addEventListener("submit",(e)=>{
     localStorage.setItem("userData",JSON.stringify(data))
     
 })
+
+// login
+
+  let LoginData = document.querySelector("#LoginData")
+
+   LoginData.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    console.log("iiiiiii");
+    
+
+    let login={
+        email:LoginData[0].value,
+        password:LoginData[1].value,
+
+    }
+
+
+   let localStorageData= localStorage.getItem("userData")
+   console.log(localStorageData);
+ let mainData=    JSON.parse(localStorageData)
+ console.log(mainData);
+
+ if(login.email===mainData.email && login.password===mainData.password){
+    alert("aapne sab kuch sahi kiya haii...")
+ }else{
+    alert("kuch nhi ho sakta aapse...")
+ }
+ 
+   
+
+ })
+
+
+
