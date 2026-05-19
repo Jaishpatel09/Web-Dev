@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Signup</title>
+
+    <style>
+        button{
+            background-color:aqua;
+            padding:5px 10px;
+        }
+
+        fieldset{
+            margin:20px;
+            width:300px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- SIGNUP FORM -->
+    <fieldset>
+        <legend>SignUp</legend>
+
+        <form id="signupForm">
+
+            <span>Name:</span>
+            <input type="text" placeholder="Enter your name">
+            <br><br>
+
+            <span>Mail:</span>
+            <input type="email" placeholder="Enter your Mail">
+            <br><br>
+
+            <span>Password:</span>
+            <input type="password" placeholder="Enter your password">
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </fieldset>
+
+
+    <!-- LOGIN FORM -->
+    <fieldset>
+        <legend>Login</legend>
+
+        <form id="loginForm">
+
+            <span>Mail:</span>
+            <input type="email" placeholder="Enter your Mail">
+            <br><br>
+
+            <span>Password:</span>
+            <input type="password" placeholder="Enter your password">
+            <br><br>
+
+            <button type="submit">Login</button>
+
+        </form>
+    </fieldset>
+
+       </form>
+</fieldset>
+
+<h1></h1>
+<h2></h2>
+
+<h3></h3>
+<button>remove data</button>
+
+
+
+<fieldset>  
+    <legend>Login</legend>
+    <form id="LoginData">
+
+
+
+<script>
+
+    // SIGNUP
+    let signupForm = document.querySelector("#signupForm");
+
+    signupForm.addEventListener("submit",(e)=>{
+
+        e.preventDefault();
+
+        let data = {
+            name: signupForm[0].value,
+            email: signupForm[1].value,
+            pass: signupForm[2].value
+        };
+
+        localStorage.setItem("userdata", JSON.stringify(data));
+
+        alert("Signup Successful ✅");
+
+        console.log(data);
+    });
+
+
+
+    // LOGIN
+    let loginForm = document.querySelector("#loginForm");
+
+    loginForm.addEventListener("submit",(e)=>{
+
+        e.preventDefault();
+
+        let log = {
+            email: loginForm[0].value,
+            pass: loginForm[1].value
+        };
+
+        let localStorageData = localStorage.getItem("userdata");
+
+        let mainData = JSON.parse(localStorageData);
+
+        console.log(mainData);
+
+        if(
+            log.email === mainData.email &&
+            log.pass === mainData.pass
+        ){
+            alert("Login Successful 🎉");
+        }
+        else{
+            alert("Invalid Email or Password ❌");
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
