@@ -11,9 +11,10 @@
         }
         .box1{
             background-color: rgb(141, 202, 255);
-            position: relative;
-            z-index: 1;
-            
+            /* position: relative;
+            z-index: 1; */
+            position: absolute;
+            top: 0px;
         }
         .box2{
             background-color: aqua;
@@ -33,13 +34,21 @@
             width: 80vh;
             margin: 20px;
             padding: 20px;
+            border-radius: 10px;
+        }
+        .parent{
+            border: 2px solid red;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
+    <div class="parent">
+
+        <div class="box box1">kya haal hai </div>
+        <div class="box box2">sab changa si</div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
 </body>
 </html>
