@@ -18,12 +18,23 @@ fetch("https://dummyjson.com/products").then((res)=>{
        <h2> ${a.brand}</h2>
        <h2> ${a.price}</h2>
 
-       <button style ="background-color:rgb(92, 92, 244)">ADD</button>
+       <button onclick="addtoCart(${a.id})" style ="background-color:rgb(92, 92, 244)">ADD</button>
        </div>`
        
 
        
    })
+   window.allP=data.products
 })
+console.log(window);
+function addtoCart(id){
+    let data = window.allP.find((a)=>{
+        return a.id==id
+    })
+    console.log(data);
+    localStorage.setItem("item",JSON.stringify(data))
+    
+}
+
     
     
