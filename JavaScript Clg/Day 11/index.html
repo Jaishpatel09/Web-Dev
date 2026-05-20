@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Quiz App</title>
 <style>
-  /* ===== Basic Reset ===== */
+ 
   * {
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@
     font-size: 28px;
   }
 
-  /* ===== Top Bar (Score + Timer) ===== */
+  
   .top-bar {
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@
     color: #e74c3c;
   }
 
-  /* ===== Question Section ===== */
+  
   .question-num {
     color: #888;
     font-size: 14px;
@@ -68,7 +68,7 @@
     min-height: 60px;
   }
 
-  /* ===== Options ===== */
+
   .options {
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@
     cursor: not-allowed;
   }
 
-  /* ===== Next Button ===== */
+ 
   #nextBtn {
     width: 100%;
     padding: 13px;
@@ -133,7 +133,7 @@
     cursor: not-allowed;
   }
 
-  /* ===== Result Screen ===== */
+ 
   .result {
     text-align: center;
   }
@@ -206,7 +206,7 @@
   </div>
 </div>
 
-<!-- <script>
+<script>
 
   const questions = [
     {
@@ -238,6 +238,12 @@
       question: "JavaScript me array ki length kaise pata karte hain?",
       options: ["array.size()", "array.length", "array.count", "length(array)"],
       answer: 1
+    },
+    {
+        question: "Loops mein se turant bahar nikalne ke liye kis keyword ka use hota hai?",
+        options: ["continue","break","exit","return"],
+        answer: 1
+        
     }
   ];
 
@@ -253,12 +259,12 @@
     loadQuestion();
   };
 
-  // function loadQuestion(){
-  //   answered=false
-  //   timeLeft=15
+  function loadQuestion(){
+    answered=false
+    timeLeft=15
   
-  // }
-  // loadQuestion()
+  }
+  loadQuestion()
 
 
   function loadQuestion() {
@@ -377,7 +383,7 @@
     document.getElementById('quizScreen').classList.remove('hide');
     loadQuestion();
   }
-</script> -->
+</script>
 
 </body>
 </html>
