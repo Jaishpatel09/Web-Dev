@@ -86,5 +86,21 @@
 // console.log("Byyy");
 
 
-let arr=[]
+// let arr=[1,2,3,4,5]
+// let [a,b,c]=arr
+// console.log(a);
+
+// obj
+
+// let obj={
+//     id:1,
+//     name:"Jaish"
+// }
+// let {id,name}=obj
+// console.log();
+
+// let h1=document.querySelector("h1")
+
+$("h1").css("color","red")
+
 
