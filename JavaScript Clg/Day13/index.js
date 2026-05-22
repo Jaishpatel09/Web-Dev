@@ -39,6 +39,7 @@
 //     }
 // }
 
+
 // let user2=structuredClone(user1)
 // user2.address.city="Bhopal"
 
@@ -47,8 +48,65 @@
 
 
 // Hidden Properties Show karegaa
-let arr=[1,2,3,4]
-console.log(Object.prototype);
+// let arr=[1,2,3,4]
+// console.log(Object.prototype);
+
+
+let str="js js js"
+
+
+console.log(str.replaceAll("js","jsx"));
+
+console.log(str.charAt(0));
+
+console.log(str.replaceAll("j",""));
+
+
+
+
+// let ans=str.split("").reverse().join("")
+// console.log(ans);
+
+
+
+
+
+
+
+
+
+
+// console.log(str.length);
+// console.log("Upper Case");
+
+// console.log(str.toLocaleUpperCase());
+
+// console.log("Lower Case");
+// console.log(str.toLocaleLowerCase());
+
+// console.log("Trimm");
+// console.log(str.trim());
+
+
+// console.log("Include");
+// console.log(str.includes("j"));
+
+
+// console.log("Index Of");
+// console.log(str.indexOf("j"));
+
+// console.log(str.substr);
+
+
+// console.log("Substring");
+// console.log(str.substring(0,4),"substring");
+
+// console.log("Split");
+
+// console.log(str.split(""));
+
+
+
 
 
 
