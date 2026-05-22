@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Card</title>
+    <style>
+        body{
+            background-color:rgb(207, 232, 254);
+        }
+        .card{
+            height: 384px;
+            width: 220px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 7px;
+        }
+        .image{
+            padding: 9px;
+        }
+        .image img{
+            border-radius: 7px;
+            
+        }
+        .capsule{
+            padding: 0 65px;
+        } 
+        .capsule span{
+            border: 1px solid rgb(136, 153, 148);
+            border-radius: 9px;
+             
+        }  
+        .content{
+            padding: 2px;
+        }
+        .content p{
+            color: rgb(175, 174, 174);
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            color: blue;
+            background-color: rgb(161, 161, 255);
+            border: 1px ;
+            border-radius: 10px;
+            height: 25px;
+        }
+
+        
+    </style>
 </head>
 <body>
-    
+    <div class="card">
+
+        <div class="image">
+            <img height="135" src="https://images.unsplash.com/photo-1778546978926-100202afc9cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div style="font: size 10px;" class="content">
+            <h3 style="font-size: 25px;">Jaish</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste delectus rem, recusandae facilis mollitia.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
 </body>
 </html>
