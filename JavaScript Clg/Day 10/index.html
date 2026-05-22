@@ -206,7 +206,7 @@
   </div>
 </div>
 
-<!-- <script>
+<script>
 
   const questions = [
     {
@@ -240,6 +240,14 @@
       answer: 1
     }
   ];
+  
+
+  const secondLastQuestion = questions[questions.length - 2];
+
+  for (let i = 0; i < secondLastQuestion.options.length; i++) {
+  console.log(secondLastQuestion.options[i]);
+}
+  
 
 
   let currentQuestion = 0;
@@ -377,7 +385,7 @@
     document.getElementById('quizScreen').classList.remove('hide');
     loadQuestion();
   }
-</script> -->
+</script>
 
 </body>
 </html>
