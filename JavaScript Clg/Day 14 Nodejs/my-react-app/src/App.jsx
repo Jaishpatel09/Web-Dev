@@ -115,20 +115,66 @@
 // App->Home->A
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
+// const App = () => {
+//   let [count,SetCount] = useState(0)
+//   function fun1(){
+//     SetCount(count+1)
+//   }
+//   return (
+//     <div>
+//       <h4>{count}</h4>
+//       <button onClick={fun1}>Click</button>
+//     </div>
+//   )
+// }
+
+
+// export default App
+
+
+
+
+// Print Input field outside the box by click
+
+// import React, { useState } from 'react'
+// const App = () => {
+//    let [input,SetInput] =  useState("")
+//    let [data,SetData] =  useState('')
+//   function fun1(e){
+//     SetInput(e.target.value)
+  
+//     // console.log(e.target.value);
+    
+    
+//   }
+//   function done(){
+//     SetData(input)
+//   }
+
+//   return (
+//     <div>
+//       <h2>{data}</h2>
+//       <input type="text" placeholder='Enter Your Name' onChange={fun1} />
+//       <button onClick={done}>Click</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import Form from './Form'
 const App = () => {
-  let [count,SetCount] = useState(0)
-  function fun1(){
-    SetCount(count+1)
-  }
   return (
     <div>
-      <h4>{count}</h4>
-      <button onClick={fun1}>Click</button>
+      <Form/>
+
+
     </div>
   )
 }
-
 
 export default App
