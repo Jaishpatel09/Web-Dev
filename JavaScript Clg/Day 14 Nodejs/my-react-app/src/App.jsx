@@ -165,14 +165,110 @@
 // export default App
 
 
-import React from 'react'
-import Form from './Form'
+// import React from 'react'
+// import Form from './Form'
+// const App = () => {
+//   return (
+//     <div>
+//       <Form/>
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React, { useEffect, useState } from 'react'
+
+// const App = () => {
+//   let [count,SetCount] = useState(0)
+
+//   let [city,SetCity] = useState("Goa")
+ 
+//   useEffect(()=>{
+//     // console.log("Hellooo");
+
+//     async function call(){
+//       let res= await fetch("https://jsonplaceholder.typicode.com/todos/")
+//       let data=  await  res.json()
+//       console.log(data);
+      
+//     }
+
+//     call()
+    
+//   },[])
+
+//   function fun1(){
+//     SetCount(count+1)
+//   }
+
+
+//   // let response = await fetch(`https://jsonplaceholder.typicode.com/todos/`);
+    
+//   // let data = await response.json();
+//   // console.log(data);
+
+
+
+
+
+//   return (
+//     <div>
+//       <h4>{count}</h4>
+//       <h4>{city}</h4>
+//       <button onClick={fun1}>Click</button>
+//       <button onClick={()=>SetCity("Manali")}>Change</button>
+//     </div>
+//   )
+// }
+
+
+// export default App
+
+
+
+
+
+// Api Data
+
+import './App.css'
+import React, { useEffect, useState } from 'react'
+
 const App = () => {
+ let [ApiData,SetApiData] =useState([])
+ 
+  useEffect(()=>{
+    // console.log("Hellooo");
+
+    async function call(){
+      let res= await fetch("https://jsonplaceholder.typicode.com/todos/")
+      let data=  await  res.json()
+      // console.log(data);
+      SetApiData(data)
+      
+    }
+
+    call()
+    
+  },[])
+
   return (
-    <div>
-      <Form/>
-
-
+    <div class="main">{
+    ApiData.map((a)=>{
+      return(
+        <div>
+          <div class="container">
+          <h1> User Id:{a.userId}</h1>
+          <h2>Id: {a.id}</h2>
+          <h2>Titel: {a.title}</h2>
+          </div>
+        </div>
+      )
+    })
+}
     </div>
   )
 }

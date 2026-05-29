@@ -1,4 +1,4 @@
-div{
+/* div{
   background-color: white;
 }
 form{
@@ -15,4 +15,20 @@ form button{
   color: rgb(72, 0, 255);
   background-color: rgb(0, 174, 255);
   border-radius: 5px;
+} */
+
+.container{
+  /* display: flex; */
+  height: 300px;
+  width:300px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  background-color: rgb(155, 251, 251);
+  /* row-gap: 5px; */
+   box-shadow: 5px 15px 5px cornflowerblue;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 10px;
 }
