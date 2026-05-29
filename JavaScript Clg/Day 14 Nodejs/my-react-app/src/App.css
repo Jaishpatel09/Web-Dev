@@ -19,16 +19,20 @@ form button{
 
 .container{
   /* display: flex; */
+  color: rgb(34, 0, 255);
   height: 300px;
   width:300px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 12px;
   background-color: rgb(155, 251, 251);
   /* row-gap: 5px; */
-   box-shadow: 5px 15px 5px cornflowerblue;
+   box-shadow: 6px 7px 5px cornflowerblue;
 }
 .main{
   display: flex;
   flex-wrap: wrap;
   gap: 32px 10px;
+}
+.container h1{
+  text-align: center;
 }
