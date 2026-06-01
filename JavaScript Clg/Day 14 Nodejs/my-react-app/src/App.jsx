@@ -1,3 +1,4 @@
+
 // import React from 'react'
 
 // import { useState } from "react"
@@ -232,44 +233,109 @@
 
 
 
-// Api Data
+// Api Data  
 
-import './App.css'
-import React, { useEffect, useState } from 'react'
+
+
+// import './App.css'
+// import React, { useEffect, useState } from 'react'
+
+// const App = () => {
+//  let [ApiData,SetApiData] =useState([])
+ 
+//   useEffect(()=>{
+//     // console.log("Hellooo");
+
+//     async function call(){
+//       let res= await fetch("https://jsonplaceholder.typicode.com/todos/")
+//       let data=  await  res.json()
+//       console.log(data);
+//       SetApiData(data)
+      
+//     }
+
+//     call()
+    
+//   },[])
+
+//   return (
+//     <div class="main">{
+//     ApiData.map((a)=>{
+//       return(
+//         <div>
+//           <div class="container">
+//           <h1 class="h1"> User Id:{a.userId}</h1>
+//           <h2>Id: {a.id}</h2>
+//           <h2>Titel: {a.title}</h2>
+//           </div>
+//         </div>
+//       )
+//     })
+// }
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// 2nd Task Listing Product 
+
+// import './App.css'
+// import React, { useEffect, useState } from 'react'
+
+// const App = () => {
+//  let [ApiData,SetApiData] =    useState([])
+ 
+//   useEffect(()=>{
+//     // console.log("Hellooo");
+
+//     async function call(){
+//       let res= await fetch(`https://dummyjson.com/products`)
+//       let data=  await  res.json()
+//       // console.log(data);
+//       SetApiData(data)
+      
+//     }
+
+//     call()
+    
+//   },[])
+
+//   return (
+//     <div class="main">{
+//     ApiData.map((a)=>{
+//       return(
+
+//         <div>
+//           <h1>{a.id}</h1>
+//         </div>
+
+//         // <div>
+//         //   <div class="container">
+//         //   <h1 class="h1"> User Id:{a.userId}</h1>
+//         //   <h2>Id: {a.id}</h2>
+//         //   <h2>Titel: {a.title}</h2>
+//         //   </div>
+//         // </div>
+//       )
+//     })
+// }
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// 1st Questins
+
+import React from 'react'
+import Task from './Task'
 
 const App = () => {
- let [ApiData,SetApiData] =useState([])
- 
-  useEffect(()=>{
-    // console.log("Hellooo");
-
-    async function call(){
-      let res= await fetch("https://jsonplaceholder.typicode.com/todos/")
-      let data=  await  res.json()
-      // console.log(data);
-      SetApiData(data)
-      
-    }
-
-    call()
-    
-  },[])
-
   return (
-    <div class="main">{
-    ApiData.map((a)=>{
-      return(
-        <div>
-          <div class="container">
-          <h1 class="h1"> User Id:{a.userId}</h1>
-          <h2>Id: {a.id}</h2>
-          <h2>Titel: {a.title}</h2>
-          </div>
-        </div>
-      )
-    })
-}
-    </div>
+    <Task/>
   )
 }
 
