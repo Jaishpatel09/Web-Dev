@@ -45,7 +45,9 @@ const Home = () => {
 
   return (
     <div>
-    <div> homeee</div>
+    homeee
     </div>
   )
 }
+
+export default Home
