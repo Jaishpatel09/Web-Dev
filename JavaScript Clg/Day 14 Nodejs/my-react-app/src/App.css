@@ -17,15 +17,15 @@ form button{
   border-radius: 5px;
 } */
 
-.container{
+/* .container{
   /* display: flex; */
-  color: rgb(34, 0, 255);
+  /* color: rgb(34, 0, 255);
   height: 300px;
   width:300px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 12px;
   background-color: rgb(155, 251, 251);
-  /* row-gap: 5px; */
+  row-gap: 5px;
    box-shadow: 6px 7px 5px cornflowerblue;
 }
 .main{
@@ -35,4 +35,21 @@ form button{
 }
 .container h1{
   text-align: center;
+}  */
+
+
+*{
+  margin: 0;
+  padding: 0;
 }
+#nav{
+  background-color: black;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+  
+  

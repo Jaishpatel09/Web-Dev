@@ -1,19 +1,19 @@
-import React from 'react'
+// import React from 'react'
 
 
 
-const Home = ({data}) => {
-    console.log(data);
-  return (
+// const Home = ({data}) => {
+//     console.log(data);
+//   return (
     
-    <div>
-        hii
-        <A name={data}/>
-    </div>
-  )
-}
+//     <div>
+//         hii
+//         <A name={data}/>
+//     </div>
+//   )
+// }
 
-export default Home
+// export default Home
 
 
 
@@ -38,3 +38,14 @@ export default Home
 
 
 
+import React from 'react'
+
+const Home = () => {
+    console.log("hellloooooooooo");
+
+  return (
+    <div>
+    <div> homeee</div>
+    </div>
+  )
+}

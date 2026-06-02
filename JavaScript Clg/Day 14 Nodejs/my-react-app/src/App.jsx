@@ -330,12 +330,65 @@
 
 // 1st Questins
 
+// import React from 'react'
+// import Task from './Task'
+
+// const App = () => {
+//   return (
+//     <Task/>
+//   )
+// }
+
+// export default App
+
+
+// 02/06/2026 lec
+
+// import React from 'react'
+// import NavBar from './NavBar'
+// import { Route,Routes } from 'react-router-dom'
+// import Home from "./Home"
+// import About from "./About"
+// import Task from "./Task"
+
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <NavBar/>
+//       <Routes>
+//       <Route    path="/"   element={<Home/>}/>
+//       <Route    path="/about"   element={<About/>}/>
+//       <Route    path="/task"   element={<Task/>}/>
+//       </Routes>
+//     </div>
+//   )
+// }
+
+
+
+
+// GitHub
+
 import React from 'react'
-import Task from './Task'
+import NavBar from "./NavBar"
+import { Route, Routes } from "react-router-dom"
+import Home from "./Home"
+import About from "./About"
+import Task from "./Task"
 
 const App = () => {
   return (
-    <Task/>
+    <div>
+      <Task/>
+      <NavBar/>
+      <Routes>
+        <Route  path="/"   element={<Home/>}/>
+        <Route  path="/about"   element={<About/>}/>
+        <Route  path="/task"   element={<Task/>}/>
+      </Routes>
+    </div>
   )
 }
 
