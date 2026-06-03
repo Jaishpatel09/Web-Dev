@@ -50,6 +50,10 @@ form button{
   align-items: center;
   justify-content: space-around;
 }
+#nav li{
+  list-style: none;
+  color: aliceblue;
+}
 
   
   
