@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            height: 60vh;
+            width: 80vw;
+            background-color: aqua;
+        }
+        .box{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            background-color: blue;
+            /* animation-name: Animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.68,-0.55, 0.48, 1.34);
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: Animation 5s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes Animation {
+            from{
+
+            }
+            to{
+                transform: translateX(74vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
