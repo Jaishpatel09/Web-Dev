@@ -393,13 +393,32 @@
 
 // export default App
 
+
+//To do Task
+// import React from 'react'
+// import Todo from './Todo'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Todo/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+//useReducer
+
 import React from 'react'
-import Todo from './Todo'
+import Reducer from './Reducer'
 
 const App = () => {
   return (
     <div>
-      <Todo/>
+      <Reducer/>
     </div>
   )
 }

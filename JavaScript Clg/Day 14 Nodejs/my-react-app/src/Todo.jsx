@@ -33,26 +33,50 @@ import "./App.css";
 
 const Todo = () => {
     const [task, setTask] = useState("");
-    const [todos, setTodos] = useState(()=>{
-        let data= localStorage.getItem("key")
-        if(data){
+    const [todos, setTodos] = useState(() => {
+        let data = localStorage.getItem("key")
+        if (data) {
             return JSON.parse(data)
         }
         return []
     });
+    let [index, SetIndex] = useState(null)
+
+    function edit(index) {
+        setTask(todos[index])
+        SetIndex(index)
+    }
+
+    function handleAorUpdate() {
+        if (task.trim() == "") {
+            return;
+        }
+        // console.log("helloooooo");
+
+        if (index !== null) {
+            let updateDATA = [...todos]
+            updateDATA[index] = task
+            setTodos(updateDATA)
+        } else {
+            setTodos([...todos, task])
+            setTask("")
+        }
 
 
-    useEffect(()=>{
-        localStorage.setItem("key",JSON.stringify(todos))
-    },[todos])
+    }
 
-    function del(id){
-        console.log(id,"hello");
-        let updateData= todos.filter((a,b)=>{
-            return b!=id
+
+    useEffect(() => {
+        localStorage.setItem("key", JSON.stringify(todos))
+    }, [todos])
+
+    function del(id) {
+        console.log(id, "hello");
+        let updateData = todos.filter((a, b) => {
+            return b != id
         })
         setTodos(updateData)
-        
+
     }
 
     return (
@@ -69,7 +93,9 @@ const Todo = () => {
 
                 />
 
-                <button onClick={() => setTodos([...todos, task])}>Add</button>
+                <button onClick={handleAorUpdate}>
+                    {index !== null ? "Update" : "Add"}
+                </button>
             </div>
 
 
@@ -79,11 +105,11 @@ const Todo = () => {
                         <span>{todo}</span>
 
                         <div className="actions">
-                            <button >
+                            <button onClick={() => edit(index)}>
                                 Edit
                             </button>
 
-                            <button onClick={()=>del(index)} >
+                            <button onClick={() => del(index)} >
                                 Delete
                             </button>
                         </div>

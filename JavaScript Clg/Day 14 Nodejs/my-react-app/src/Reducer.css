@@ -1,0 +1,15 @@
+.container{
+   background-color: rgb(152, 152, 167);
+   text-align: center;
+}
+.container button{
+color: rgb(9, 9, 9);
+background-color: antiquewhite;
+width: 50px;
+border: 1px solid white;
+/* padding: 5px; */
+}
+.butten{
+    padding: 20px;
+    
+}
