@@ -1,0 +1,97 @@
+// import React, { useState } from 'react'
+// import './App.css'
+
+// const Todo = () => {
+//     const [task, setTask] = useState("");
+//     const [todo, setTodos] = useState([]);
+//   return (
+//     <div>
+//         <div id="container">
+//         <h1>ToDo List</h1>
+
+//         <input
+//           type="text"
+//           name="task"
+//           value={task}
+//           placeholder="Enter a task"
+//           onChange={(e)=>setTask(e.target.value)}
+//           />
+
+
+//         <button onClick={()=>setTodos([...todos,task])}>Add</button>
+//         </div>
+//     </div>
+//   )
+// }
+
+// export default Todo
+
+
+// Git
+import React, { useEffect, useState } from "react";
+import "./App.css";
+
+const Todo = () => {
+    const [task, setTask] = useState("");
+    const [todos, setTodos] = useState(()=>{
+        let data= localStorage.getItem("key")
+        if(data){
+            return JSON.parse(data)
+        }
+        return []
+    });
+
+
+    useEffect(()=>{
+        localStorage.setItem("key",JSON.stringify(todos))
+    },[todos])
+
+    function del(id){
+        console.log(id,"hello");
+        let updateData= todos.filter((a,b)=>{
+            return b!=id
+        })
+        setTodos(updateData)
+        
+    }
+
+    return (
+        <div className="container">
+            <h1>Todo List</h1>
+
+            <div className="input-box">
+                <input
+                    type="text"
+                    name="task"
+                    value={task}
+                    placeholder="Enter a task"
+                    onChange={(e) => setTask(e.target.value)}
+
+                />
+
+                <button onClick={() => setTodos([...todos, task])}>Add</button>
+            </div>
+
+
+            <div className="todo-list">
+                {todos.map((todo, index) => (
+                    <div className="todo-item" key={index}>
+                        <span>{todo}</span>
+
+                        <div className="actions">
+                            <button >
+                                Edit
+                            </button>
+
+                            <button onClick={()=>del(index)} >
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default Todo;

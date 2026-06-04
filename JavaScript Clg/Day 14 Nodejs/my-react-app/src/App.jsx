@@ -371,22 +371,35 @@
 
 // GitHub
 
+// import React from 'react'
+// import NavBar from "./NavBar"
+// import { Route, Routes } from "react-router-dom"
+// import Home from "./Home"
+// import About from "./About"
+// import Task from "./Task"
+
+// const App = () => {
+//   return (
+//     <div>
+//       <NavBar/>
+//       <Routes>
+//         <Route  path="/"   element={<Home/>}/>
+//         <Route  path="/about"   element={<About/>}/>
+//         <Route  path="/task"   element={<Task/>}/>
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import NavBar from "./NavBar"
-import { Route, Routes } from "react-router-dom"
-import Home from "./Home"
-import About from "./About"
-import Task from "./Task"
+import Todo from './Todo'
 
 const App = () => {
   return (
     <div>
-      <NavBar/>
-      <Routes>
-        <Route  path="/"   element={<Home/>}/>
-        <Route  path="/about"   element={<About/>}/>
-        <Route  path="/task"   element={<Task/>}/>
-      </Routes>
+      <Todo/>
     </div>
   )
 }
