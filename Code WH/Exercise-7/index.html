@@ -1,39 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex-6</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            background-color: antiquewhite;
+            /* background-color: antiquewhite; */
         }
-        .new ul{
+
+        .new ul {
             display: flex;
             padding-top: 15px;
         }
-        .new ul{
+
+        .new ul {
             list-style: none;
             gap: 44px;
         }
-        .logo img{
+
+        .logo img {
             height: 39px;
         }
-        .first{
+
+        .first {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 30px;
+            margin: 63px;
+        }
+
+        .first span {
+            font-size: 35px;
+        }
+
+        .first img {
+            width: 64px;
+            margin: 0 23px;
+        }
+
+        .btn {
+            height: 46px;
+            width: 292px;
+            background-color: #00b6d1;
+            border: 0px;
+            border-radius: 6px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            gap: 17px;
+
+        }
+
+        .flex :nth-child(2) {
+            font-weight: 600;
+            font-size: 31px;
+            color: #737373;
+        }
+        .flex :last-child{
+                color: #737373;
+    margin: 14px;
+        }
+        .flex img{
+            margin: -9px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -42,36 +90,44 @@
 
             </div>
             <div class="new">
-            <ul>
-                <li>Products</li>
-                <li>Pricing</li>
-                <li>Resources</li>
-                <li>About Us</li>
-                <li>
-                    <div>
-                        <img height="35px" src="Notion.png" alt="">
-                    </div>
-                </li>
-            </ul>
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                    <li>
+                        <div>
+                            <img height="35px" src="Notion.png" alt="">
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
-<main>
-     <section class="first">
-            <span> Download <b>UltraEdit</b> for Windows<img width="34"
-                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></span>
-            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the
-                text editor.</p>
-            <div>
-                <button class="btn">
+        <main>
+            <section class="first">
+                <span> Download <b>UltraEdit</b> for Windows<img width="34"
+                        src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></span>
+                <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                    text editor.</p>
+                <div>
+                    <button class="btn">
 
-                    DOWNLOAD MAC OR LINUX VERSION
-                </button>
-            </div>
+                        DOWNLOAD MAC OR LINUX VERSION
+                    </button>
+                </div>
 
 
-        </section>
-</main>
+            </section>
+            <section class="second">
+                <div class="flex">
+                    <img src="UE_logo_icon_white_bkg_256x256-3-1.png">
+                    <div>Download UltraEdit</div>
+                    <div>v2025.2.0.24 (released 2026-04-10) | Latest changes </div>
+                </div>
+            </section>
+        </main>
 
     </header>
 </body>
+
 </html>
