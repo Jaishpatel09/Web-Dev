@@ -412,13 +412,28 @@
 
 //useReducer
 
-import React from 'react'
-import Reducer from './Reducer'
+// import React from 'react'
+// import Reducer from './Reducer'
 
+// const App = () => {
+//   return (
+//     <div>
+//       <Reducer/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//ToDo by useReducer 
+
+import React from 'react'
+import Todo from './Todo'
 const App = () => {
   return (
     <div>
-      <Reducer/>
+      <Todo/>
     </div>
   )
 }
