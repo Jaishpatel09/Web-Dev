@@ -426,14 +426,34 @@
 // export default App
 
 
+
+
 //ToDo by useReducer 
 
+// import React from 'react'
+// import Todo from './Todo'
+// const App = () => {
+//   return (
+//     <div>
+//       <Todo/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//Basicss
+
 import React from 'react'
-import Todo from './Todo'
+import Basics from './Basics'
+
 const App = () => {
   return (
     <div>
-      <Todo/>
+      <Basics
+      // name="Jaish Patel"
+      // salary="15000"
+      />
     </div>
   )
 }
