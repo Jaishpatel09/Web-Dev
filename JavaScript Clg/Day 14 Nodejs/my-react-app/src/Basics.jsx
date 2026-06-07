@@ -78,34 +78,54 @@
 
 //useState onChange 
 //Event Object
+// import React, { useState } from 'react'
+
+
+// const Basics = () => {
+//   const [name, setName] = useState("")
+
+//   return (
+//     <div>
+//       <input
+//         value={name}
+//         onChange={(e) => { setName(e.target.value) }} placeholder='Enter Your Name' />
+//       <h1>{name}</h1>
+
+//       {name.length > 10
+//         ? <h2>Maximum 10 Characters Allowed</h2>
+//         : <h2>Valid Input</h2>
+//       }
+
+//       {/* {name.length > 10 && (
+//   <h2>Maximum 10 Characters Allowed</h2>)} */}
+
+//       <h2>Characters Count:{name.length}</h2>
+
+//       {/* <h2>Upper Case:{name.toUpperCase()}</h2> */}
+
+//       <button onClick={(e) => { setName("") }}>Clear</button>
+      
+//       {/* {name ? <h1>Hello {name}</h1> : <h1>Please Enter Name</h1>} */}
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+//Show/Hide Message
+
 import React, { useState } from 'react'
 
-
 const Basics = () => {
-  const [name, setName] = useState("")
-
+  const [show,setShow] = useState(false)
   return (
     <div>
-      <input
-        value={name}
-        onChange={(e) => { setName(e.target.value) }} placeholder='Enter Your Name' />
-      <h1>{name}</h1>
-
-      {name.length > 10
-        ? <h2>Maximum 10 Characters Allowed</h2>
-        : <h2>Valid Input</h2>
-      }
-
-      {/* {name.length > 10 && (
-  <h2>Maximum 10 Characters Allowed</h2>)} */}
-
-      <h2>Characters Count:{name.length}</h2>
-
-      {/* <h2>Upper Case:{name.toUpperCase()}</h2> */}
-
-      <button onClick={(e) => { setName("") }}>Clear</button>
-      
-      {/* {name ? <h1>Hello {name}</h1> : <h1>Please Enter Name</h1>} */}
+    <button onClick={()=>{setShow(!show)}}>
+      {show ? "Hide Message" : "Show Message"}
+    </button>
+    <h1>
+    {show && "Hello Jaish Patel"}
+    </h1>
     </div>
   )
 }
