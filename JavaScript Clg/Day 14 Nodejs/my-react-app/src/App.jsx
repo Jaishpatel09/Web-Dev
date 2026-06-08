@@ -445,53 +445,51 @@
 //Basicss
 
 
-// import React from 'react'
-// // import Basics from './Basics'
-// import Home from './Home'
-
-// const App = () => {
-//   return (
-//     <div>
-//       {/* <Basics
-//       // name="Jaish Patel"
-//       // salary="15000"
-//       /> */}
-
-//       <Home/>
-
-
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
-
 import React from 'react'
-import Home from "./Home"
-
-import NavBar from "./NavBar"
-
-import { Route, Routes } from "react-router-dom"
-import Cart from "./Cart"
-import { useState } from 'react'
+import Basics from './Basics'
+import Home from './Home'
 
 const App = () => {
-  let [apiData,SetApiData] =   useState([])
- let [cart,SetCart]= useState([])
   return (
-
     <div>
-      <NavBar/>
-      <Routes>
-        <Route path="/" element={<Home apiData={apiData}  SetApiData={SetApiData} cart={cart}  SetCart={SetCart}/>}/>
-        <Route path="/cart" element={<Cart cart={cart}/>}/>
+      <Basics
+      // name="Jaish Patel"
+      // salary="15000"
+      />
 
-      </Routes>
+
     </div>
   )
 }
 
 export default App
+
+
+
+
+// import React from 'react'
+// import Home from "./Home"
+
+// import NavBar from "./NavBar"
+
+// import { Route, Routes } from "react-router-dom"
+// import Cart from "./Cart"
+// import { useState } from 'react'
+
+// const App = () => {
+//   let [apiData,SetApiData] =   useState([])
+//  let [cart,SetCart]= useState([])
+//   return (
+
+//     <div>
+//       <NavBar/>
+//       <Routes>
+//         <Route path="/" element={<Home apiData={apiData}  SetApiData={SetApiData} cart={cart}  SetCart={SetCart}/>}/>
+//         <Route path="/cart" element={<Cart cart={cart}/>}/>
+
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App

@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 const Cart = ({cart}) => {
   return (
-    <div>
+    <div id='card'>
           {
         cart.map((a)=>{
           return(<div id='main_card'>
