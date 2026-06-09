@@ -431,7 +431,7 @@
 //ToDo by useReducer 
 
 // import React from 'react'
-// import Todo from './Todo'
+// import Todo from './ToDo.jsx'
 // const App = () => {
 //   return (
 //     <div>
@@ -452,11 +452,7 @@ import Home from './Home'
 const App = () => {
   return (
     <div>
-      <Basics
-      // name="Jaish Patel"
-      // salary="15000"
-      />
-
+      <Basics/>
 
     </div>
   )
@@ -490,6 +486,23 @@ export default App
 //       </Routes>
 //     </div>
 //   )
+// }
+
+// export default App
+
+
+
+
+
+// import React from 'react'
+// import NxtToDo from './NxtToDo'
+
+// const App = () => {
+//     return (
+//         <div>
+//             <NxtToDo/>
+//         </div>
+//     )
 // }
 
 // export default App

@@ -72,7 +72,7 @@ form button{
   } */
 
   /* Git */
-  /* * {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -143,12 +143,12 @@ form button{
   
   .actions button {
     /* border: none; */
-    /* padding: 8px 12px;
+     padding: 8px 12px;
     border-radius: 15px;
     color: rgb(39, 17, 232);
     cursor: pointer;
   }
-   */
+  
   /* .actions button:first-child {
     background: orange;
   }
@@ -159,7 +159,8 @@ form button{
 
 
 
-  *{
+  
+  /* *{
   margin: 0;
   padding: 0;
 }
@@ -174,16 +175,17 @@ nav{
 }
 li{
   color: snow;
-}
+} */
+ /*
 #card{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   /* height: 200px;
   width: 171px;
-  background-color: antiquewhite; */
+  background-color: antiquewhite;
 }
-#main_card{
+/* #main_card{
   height: 200px;
   width: 171px;
   background-color: snow;
@@ -192,4 +194,4 @@ li{
 img{
   height: 80%;
   width: 80%;
-}
+} */

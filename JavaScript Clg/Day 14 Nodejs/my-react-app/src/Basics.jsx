@@ -133,28 +133,52 @@
 // export default Basics
 
 
+// import React, { useState } from 'react'
+// import './Basics.css'
+
+
+// const Basics = () => {
+//   const [count,setCount] = useState(0)
+//   return (
+//     // <div className='display'>
+//     <div id="boxx">
+//       <h1>{count}</h1>
+//       {count === 0 && <h2>Minimum Limit Reached</h2>}
+//       {count === 10 && <h2>Maximum Limit Reached</h2>}
+//       <div className="buttons">
+//       <button id='inc' onClick={()=>{
+//         if(count<10){
+//         setCount(count+1)}
+//       }}>Increase</button>
+//       <button id='dec' onClick={()=>{
+//            if (count>0){
+//         setCount (count-1)
+//       }}
+//     }
+//         >Decrease</button>
+//       <button id='reset' onClick={()=>setCount(0)}>Reset</button>
+//       </div>
+//     </div>
+//     // </div>
+//   )
+// }
+
+// export default Basics
+
+//Password Length Checker
+
 import React, { useState } from 'react'
 
-
 const Basics = () => {
-  const [count,setCount] = useState(0)
+  let [pass,setPass] = useState("")
   return (
     <div>
-      <h1>{count}</h1>
-      {count === 0 && <h2>Minimum Limit Reached</h2>}
-      {count === 10 && <h2>Maximum Limit Reached</h2>}
-      
-      <button onClick={()=>{
-        if(count<10){
-        setCount(count+1)}
-      }}>Increase</button>
-      <button onClick={()=>{
-           if (count>0){
-        setCount (count-1)
-      }}
-    }
-        >Decrease</button>
-      <button onClick={()=>setCount(0)}>Reset</button>
+      {/* <h2>{pass}</h2> */}
+      <input type='password' onChange={(e)=>
+        {setPass(e.target.value)}
+        } placeholder='Enter Password'/>
+        {pass.length<8 ? <h3>Weak Password</h3>: <h3>Strong Password</h3>}
+        <button onClick={()=>{setPass(<h2>{pass}</h2>)}}>Show Pass</button>
     </div>
   )
 }

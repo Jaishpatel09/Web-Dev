@@ -31,3 +31,30 @@ button{
 
 /* onChange */
 
+
+
+#boxx{
+    height: 50vh;
+    width: 50vw;
+    background-color: aquamarine;
+    text-align: center;
+    align-content: center;
+    border: 2px solid;
+    border-radius: 24px;
+    box-shadow: -1px 0px 20px 9px rgb(0 0 0);
+}
+button{
+    height: 25px;
+    width: 60px;
+    border: none;
+    border-radius: 7px;
+}
+#inc{
+    background-color: rgb(42, 248, 42);
+}
+#dec{
+    background-color: red;
+}
+#reset{
+    background-color: rgb(86, 86, 255);
+}
