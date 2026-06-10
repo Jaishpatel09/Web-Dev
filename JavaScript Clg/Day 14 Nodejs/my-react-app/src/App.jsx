@@ -445,20 +445,20 @@
 //Basicss
 
 
-import React from 'react'
-import Basics from './Basics'
-import Home from './Home'
+// import React from 'react'
+// import Basics from './Basics'
+// import Home from './Home'
 
-const App = () => {
-  return (
-    <div>
-      <Basics/>
+// const App = () => {
+//   return (
+//     <div>
+//       <Basics/>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -494,15 +494,15 @@ export default App
 
 
 
-// import React from 'react'
-// import NxtToDo from './NxtToDo'
+import React from 'react'
+import NxtToDo from './NxtToDo'
 
-// const App = () => {
-//     return (
-//         <div>
-//             <NxtToDo/>
-//         </div>
-//     )
-// }
+const App = () => {
+    return (
+        <div>
+            <NxtToDo/>
+        </div>
+    )
+}
 
-// export default App
+export default App

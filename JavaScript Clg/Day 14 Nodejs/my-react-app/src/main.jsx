@@ -6,15 +6,17 @@ import './index.css'
 
 import Form from './Form.jsx'
 import {BrowserRouter} from 'react-router-dom'
-// import Context from './Context.jsx'
+import Context from './Context.jsx'
 import NxtToDo from './nxtToDo.jsx'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <BrowserRouter> */}
-    {/* <Context.Provider value="Yash"> */}
+    {/* <Context.Provider value={{store,dispatch}}> */}
+    <Context>
    <App/>
+   </Context>
     {/* </Context.Provider> */}
     {/* </BrowserRouter> */}
     
