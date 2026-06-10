@@ -5,7 +5,6 @@ const initialState = {
       todos:[]
 };
 function reducer(store, action) {
-    // console.log(action,"acc");
     
     if(action.type=="Set"){
         return{

@@ -104,7 +104,7 @@
 //       {/* <h2>Upper Case:{name.toUpperCase()}</h2> */}
 
 //       <button onClick={(e) => { setName("") }}>Clear</button>
-      
+
 //       {/* {name ? <h1>Hello {name}</h1> : <h1>Please Enter Name</h1>} */}
 //     </div>
 //   )
@@ -167,18 +167,53 @@
 
 //Password Length Checker
 
+// import React, { useState } from 'react'
+// import './Basics.css'
+// const Basics = () => {
+//   let [pass,setPass] = useState("")
+//   let [show, setShow] =useState(false)
+//   return (
+//     <div className='containeer'>
+//       {/* <h2>{pass}</h2> */}
+//       <input id='inputt' type={show ? "text" : "password"} onChange={(e)=>
+//         {setPass(e.target.value)}
+//         } placeholder='Enter Password'/>
+//         {pass.length<8 ? <h3>Weak Password</h3>: <h3>Strong Password</h3>}
+//         <button id='buttonn' onClick={()=>{
+//           setShow(!show)
+//         }}>
+//           {show ? "Hide Pass" : "Show Pass"}
+//         </button>
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+// UserName Checker
+
 import React, { useState } from 'react'
 
 const Basics = () => {
-  let [pass,setPass] = useState("")
+  let [user, setUser] = useState("")
   return (
     <div>
-      {/* <h2>{pass}</h2> */}
-      <input type='password' onChange={(e)=>
-        {setPass(e.target.value)}
-        } placeholder='Enter Password'/>
-        {pass.length<8 ? <h3>Weak Password</h3>: <h3>Strong Password</h3>}
-        <button onClick={()=>{setPass(<h2>{pass}</h2>)}}>Show Pass</button>
+      {/* <h1>{user.length}</h1> */}
+      <input type="text" placeholder='Enter Username'
+        onChange={(e) => setUser(e.target.value)} />
+      
+        {
+          user.length > 0 &&
+            (
+              user.length < 4
+                ? <h2>Username Too Short</h2>
+                : user.length <= 10
+                  ? <h2>Valid Username</h2>
+                  : <h2>Username Too Long</h2>
+            )
+        }
+      
+
     </div>
   )
 }

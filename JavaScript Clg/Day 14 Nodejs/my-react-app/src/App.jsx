@@ -445,20 +445,18 @@
 //Basicss
 
 
-// import React from 'react'
-// import Basics from './Basics'
-// import Home from './Home'
+import React from 'react'
+import Basics from './Basics'
 
-// const App = () => {
-//   return (
-//     <div>
-//       <Basics/>
+const App = () => {
+  return (
+    <div>
+      <Basics/>
+    </div>
+  )
+}
 
-//     </div>
-//   )
-// }
-
-// export default App
+export default App
 
 
 
@@ -492,17 +490,33 @@
 
 
 
+//ToDo Listt
+
+// import React from 'react'
+// import NxtToDo from './NxtToDo'
+
+// const App = () => {
+//     return (
+//         <div>
+//             <NxtToDo/>
+//         </div>
+//     )
+// }
+
+// export default App
 
 
-import React from 'react'
-import NxtToDo from './NxtToDo'
+// import React from 'react'
+// import Color from './Color'
 
-const App = () => {
-    return (
-        <div>
-            <NxtToDo/>
-        </div>
-    )
-}
+// const App = () => {
+//   return (
+//     <div>
+//         <Color/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+

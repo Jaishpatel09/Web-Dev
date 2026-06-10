@@ -14,9 +14,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <BrowserRouter> */}
     {/* <Context.Provider value={{store,dispatch}}> */}
-    <Context>
+    {/* <Context> */}
    <App/>
-   </Context>
+   {/* </Context> */}
     {/* </Context.Provider> */}
     {/* </BrowserRouter> */}
     
