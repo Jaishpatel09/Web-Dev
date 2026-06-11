@@ -445,18 +445,18 @@
 //Basicss
 
 
-import React from 'react'
-import Basics from './Basics'
+// import React from 'react'
+// import Basics from './Basics'
 
-const App = () => {
-  return (
-    <div>
-      <Basics/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <Basics/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -520,3 +520,84 @@ export default App
 // export default App
 
 
+// useCounter 
+
+import React from 'react'
+import useCounter from './useCounter'
+
+const App = () => {
+  let {count,inc,dec,reset} = useCounter(0)
+  console.log("hell");
+  
+  return (
+    <div>
+      <h3>{count}</h3>
+      <button onClick={inc}>++</button>
+      <button onClick={dec} >--</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+
+//Memo Function
+
+// import React, { memo, useState } from 'react'
+
+// const App = () => {
+//   let [count,setCount] = useState(0)
+//   return (
+//     <div>
+//       <h2>{count}</h2>
+//       <button onClick={()=> setCount(count+1)}>Add</button>
+//       <M/>
+//     </div>
+//   )
+// }
+// let M=memo(function child(){
+//   console.log("Hello");
+  
+// })
+
+
+// export default App
+
+
+
+//UseCounter
+
+// import React from 'react'
+// import useCounter from "./useCounter"
+// // import './App.css'
+
+// const App = () => {
+//      let{count,inc,dec,reset}=useCounter(0)
+//      console.log("he");
+//      let res=0
+//      function cal(){
+//       for(let i=0;i<10;i++){
+//         res=i
+//       }
+//       return res
+//      }
+//      let total=cal()
+//   return (
+  
+//     <div id="one">
+      
+//       <h2>{count}</h2>
+//       <button onClick={inc}>+</button>
+//       <button onClick={dec}>-</button>
+//       <button onClick={reset}>RESET</button>
+
+
+//     </div>
+//   )
+// }
+
+// export default App
