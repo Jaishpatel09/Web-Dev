@@ -99,8 +99,52 @@ body{
 } */
 
 
+
+
+
+
 /* Username Checker */
+/* #boxxx {
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(209, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 
 
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+body {
+    padding-top: 80px;
+}
+
+#inp {
+    height: 26px;
+    width: 162px;
+    border: 2px solid rgb(175, 90, 255);
+    border-radius: 13px;
+    text-align: center;
+}
+
+#short {
+    color: rgb(255 191 0);
+    font-family: cursive;
+
+}
+
+#valid {
+    color: rgb(27, 255, 27);
+    font-family: cursive;
+}
+
+#long {
+    color: rgb(255, 0, 0);
+    font-family: cursive;
+} */
 

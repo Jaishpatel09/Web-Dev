@@ -445,18 +445,18 @@
 //Basicss
 
 
-// import React from 'react'
-// import Basics from './Basics'
+import React from 'react'
+import Basics from './Basics'
 
-// const App = () => {
-//   return (
-//     <div>
-//       <Basics/>
-//     </div>
-//   )
-// }
+const App = () => {
+  return (
+    <div>
+      <Basics/>
+    </div>
+  )
+}
 
-// export default App
+export default App
 
 
 
@@ -522,24 +522,29 @@
 
 // useCounter 
 
-import React from 'react'
-import useCounter from './useCounter'
+// import React, { memo } from 'react'
+// import useCounter from './useCounter'
 
-const App = () => {
-  let {count,inc,dec,reset} = useCounter(0)
-  console.log("hell");
+// const App = () => {
+//   let {count,inc,dec,reset} = useCounter(0)
+//   // console.log("hell");
   
-  return (
-    <div>
-      <h3>{count}</h3>
-      <button onClick={inc}>++</button>
-      <button onClick={dec} >--</button>
-      <button onClick={reset}>Reset</button>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <h3>{count}</h3>
+//       <button onClick={inc}>++</button>
+//       <button onClick={dec} >--</button>
+//       <button onClick={reset}>Reset</button>
+//       <M/>
+//     </div>
+//   )
+// }
+// let M=memo(function child(){
+//   console.log("hii");
+  
+// })
 
-export default App
+// export default App
 
 
 
@@ -569,7 +574,7 @@ export default App
 
 
 
-//UseCounter
+//UseCounter nxt
 
 // import React from 'react'
 // import useCounter from "./useCounter"

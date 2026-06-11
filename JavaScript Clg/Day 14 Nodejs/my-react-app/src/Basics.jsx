@@ -190,32 +190,66 @@
 
 // export default Basics
 
+
+
 // UserName Checker
+// import React, { useState } from 'react'
+// import './Basics.css'
 
-import React, { useState } from 'react'
+// const Basics = () => {
+//   let [user, setUser] = useState("")
+//   return (
+//     <div id='boxxx'>
+//       {/* <h1>{user.length}</h1> */}
+//       <input id='inp' type="text" placeholder='Enter Username'
+//         onChange={(e) => setUser(e.target.value)} />
+      
+//         {
+//           user.length > 0 &&
+//             (
+//               user.length < 4
+//                 ? <h2 id='short'>Username Too Short</h2>
+//                 : user.length <= 10
+//                   ? <h2 id='valid'>Valid Username</h2>
+//                   : <h2 id='long'>Username Too Long</h2>
+//             )
+//         }
+      
 
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+
+
+//useEffect 
+
+// import React from 'react'
+// const Basics = () => {
+//   console.log("Hello");
+//   return <h3>Base</h3>;
+// }
+//  export default Basics
+  
+
+import React, { useEffect } from 'react'
 const Basics = () => {
-  let [user, setUser] = useState("")
+useEffect(()=>{
+  
+  console.log("Content Loaded");
+  
+},[])
+  
   return (
-    <div>
-      {/* <h1>{user.length}</h1> */}
-      <input type="text" placeholder='Enter Username'
-        onChange={(e) => setUser(e.target.value)} />
-      
-        {
-          user.length > 0 &&
-            (
-              user.length < 4
-                ? <h2>Username Too Short</h2>
-                : user.length <= 10
-                  ? <h2>Valid Username</h2>
-                  : <h2>Username Too Long</h2>
-            )
-        }
-      
-
-    </div>
+    <>
+    <h2>useEffect</h2>
+    </>
   )
 }
 
 export default Basics
+   
+
