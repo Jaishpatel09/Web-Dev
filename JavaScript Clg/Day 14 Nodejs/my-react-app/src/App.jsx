@@ -445,18 +445,18 @@
 //Basicss
 
 
-import React from 'react'
-import Basics from './Basics'
+// import React from 'react'
+// import Basics from './Basics'
 
-const App = () => {
-  return (
-    <div>
-      <Basics/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <Basics/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -606,3 +606,58 @@ export default App
 // }
 
 // export default App
+
+
+//props data import export 
+// import React from 'react'
+// import A from './A'
+
+// const App = () => {
+//   let user="Kya Haal Hai"
+//   return (
+//     <div>
+//       <A data={user}/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import A from './A'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <A/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// navBar
+
+import React from 'react'
+import NavBar from './NavBar'
+import { Routes ,Route } from 'react-router-dom'
+import Home from "./Home"
+import Cart from "./Cart"
+import About from "./About"
+
+const App = () => {
+  return (
+    <div>
+      <NavBar/>
+      <Routes>
+      
+          <Route path='/' element={<Home/>}/>
+          <Route path='/Cart' element={<Cart/>}/>
+          <Route path='/About' element={<About/>}/>
+
+      </Routes>
+    </div>
+  )
+}
+
+export default App
