@@ -235,18 +235,24 @@
 //  export default Basics
   
 
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+
 const Basics = () => {
-useEffect(()=>{
-  
-  console.log("Content Loaded");
-  
-},[])
-  
+
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    console.log("Effect Chala")
+  }, [])
+
   return (
-    <>
-    <h2>useEffect</h2>
-    </>
+    <div>
+      <h1>{count}</h1>
+
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
   )
 }
 
