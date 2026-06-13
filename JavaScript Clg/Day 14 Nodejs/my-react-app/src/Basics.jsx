@@ -234,28 +234,89 @@
 // }
 //  export default Basics
   
+//useEffect
 
-import React, { useState, useEffect } from 'react'
+// import React, { useState, useEffect } from 'react'
+
+// const Basics = () => {
+
+//   const [count, setCount] = useState(0)
+
+//   useEffect(() => {
+//     console.log("Effect Chala")
+//   }, [])
+
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+
+//       <button onClick={() => setCount(count + 1)}>
+//         Increase
+//       </button>
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+// import React, { useEffect, useState } from 'react'
+
+// const Basics = () => {
+//   let [name,setName] = useState("")
+//   let [count,setCount] = useState(0)
+//    useEffect(()=>{
+//     console.log("effect Changed");
+    
+//    })
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <input onChange={(e)=>{setName(e.target.value)}} type="text" placeholder='Enter Anything' />
+//       <button onClick={()=>{setCount(count+1)}}>Add</button>
+//     </div>
+//   )
+// }
+
+// export default Basics
+   
+
+//Title Counter
+
+// import React, { useEffect, useState } from 'react'
+
+// const Basics = () => {
+//   let [count,setCount] = useState(0)
+//   useEffect(()=>{
+//     document.title=`Count : ${count}`
+//   },[count])
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <button onClick={()=>{setCount(count+1)}}>Add</button>
+
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+//Name Title
+
+import React, { useEffect, useState } from 'react'
 
 const Basics = () => {
+  let [name,setName] = useState("")
 
-  const [count, setCount] = useState(0)
+  useEffect(()=>{
+    document.title= name
 
-  useEffect(() => {
-    console.log("Effect Chala")
-  }, [])
-
+  })
   return (
     <div>
-      <h1>{count}</h1>
-
-      <button onClick={() => setCount(count + 1)}>
-        Increase
-      </button>
+        <input onChange={(e)=>{setName(e.target.value)}} />
     </div>
   )
 }
 
 export default Basics
-   
-
