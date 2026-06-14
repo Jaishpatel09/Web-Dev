@@ -370,27 +370,62 @@
 
 //Object in react with map() function
 
+// import React from 'react'
+
+// const Basics = () => {
+//    const students = [
+//     {name: "Jatin", age: 20},
+//     {name: "Yash", age: 21},
+//     {name: "Vinay", age: 22}
+//   ]
+
+//   return (
+//     <div>
+//         {
+//           students.map((student,index)=>{
+//             return(
+            
+//               <h3 key={index}>{student.name} - {student.age} </h3>
+//             )
+//           })
+//         }
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+//Mini Project of React
+
 import React from 'react'
 
 const Basics = () => {
-   const students = [
-    {name: "Jatin", age: 20},
-    {name: "Yash", age: 21},
-    {name: "Vinay", age: 22}
-  ]
-
+  const students = [
+  {name: "Jatin", age: 20},
+  {name: "Yash", age: 21},
+  {name: "Vinay", age: 22},
+  {name: "Gyan", age: 19}
+]
   return (
     <div>
         {
           students.map((student,index)=>{
             return(
-            
-              <h3 key={index}>{student.name} - {student.age} </h3>
-            )
-          })
-        }
-    </div>
-  )
+              <div key={index}>
+            <h2>
+              Name :{student.name}
+            </h2>
+            <h3>
+              Age :{student.age}
+            </h3>
+            <button>View Details</button>
+            </div>
+          )
+        })
+      }
+  </div>
+)
 }
-
+            
 export default Basics
