@@ -303,18 +303,92 @@
 
 //Name Title
 
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
+
+// const Basics = () => {
+//   let [name,setName] = useState("")
+
+//   useEffect(()=>{
+//     document.title= name
+
+//   })
+//   return (
+//     <div>
+//         <input onChange={(e)=>{setName(e.target.value)}} />
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+// Map Function map()
+
+// import React from 'react'
+
+// const Basics = () => {
+//   let fruits=["apple", "orange", "banana","mango"]
+//   return (
+//     <div>
+//         {
+//           fruits.map((fruit,index)=>{
+//             return (
+//               <h3 key={index}>{fruit}</h3>
+//             )
+//           })
+//         }
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+//map() array
+
+// import React from 'react'
+
+// const Basics = () => {
+//   let students=["Jatin","Yash","Vinay","Gyan"]
+
+//   return (
+//     <div>
+//       {
+//         students.map((student,index)=>{
+//           return(
+//           <h4 key={index}> {index}:{student}</h4>
+//           )
+//         })
+//       }
+
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+//Object in react with map() function
+
+import React from 'react'
 
 const Basics = () => {
-  let [name,setName] = useState("")
+   const students = [
+    {name: "Jatin", age: 20},
+    {name: "Yash", age: 21},
+    {name: "Vinay", age: 22}
+  ]
 
-  useEffect(()=>{
-    document.title= name
-
-  })
   return (
     <div>
-        <input onChange={(e)=>{setName(e.target.value)}} />
+        {
+          students.map((student,index)=>{
+            return(
+            
+              <h3 key={index}>{student.name} - {student.age} </h3>
+            )
+          })
+        }
     </div>
   )
 }
