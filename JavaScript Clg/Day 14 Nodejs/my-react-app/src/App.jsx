@@ -445,18 +445,18 @@
 //Basicss
 
 
-import React from 'react'
-import Basics from './Basics'
+// import React from 'react'
+// import Basics from './Basics'
 
-const App = () => {
-  return (
-    <div>
-      <Basics/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <Basics/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -661,3 +661,39 @@ export default App
 // }
 
 // export default App
+
+//navigate and Params use in react
+// import React from 'react'
+// import { Route, Routes } from 'react-router-dom'
+// import UserList from './Userlist'
+// import UserProfile from './UserProfile'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Routes>
+//         <Route   path="/"   element={ <UserList/>}/>
+//         <Route   path="/profile/:id"   element={ <UserProfile/>}/>
+
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//Shoping web
+
+import React from 'react'
+import WebNav from './WebNav'
+
+const App = () => {
+  return (
+    <div>
+      <WebNav/>
+    </div>
+  )
+}
+
+export default App
