@@ -685,15 +685,133 @@
 
 //Shoping web
 
-import React from 'react'
-import WebNav from './WebNav'
+// import React from 'react'
+// import WebNav from './WebNav'
 
-const App = () => {
-  return (
-    <div>
-      <WebNav/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <WebNav/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+
+
+
+// import React from 'react'
+
+// const App = () => {
+  
+//   Array.prototype.newMap= function (cb){
+//     let result =[]
+//     for(let i=0; i<this.length; i++){
+//       // result.push(cb(this[i],i,this))
+
+//         if(cb(this[i],i,this)){
+//           result.push(this[i])
+//         }
+
+//     }
+//     return result
+//   }
+
+//   let arr =[2,3,4,5,6,7,8,9]
+
+//   let data = arr.newMap((a,b,c)=>{
+//     // return a
+//     return a>3
+
+//   } )
+//      console.log(data);
+     
+//   return (
+//     <div>App
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//forEach function
+// import React from 'react'
+
+// const App = () => {
+  
+//   Array.prototype.newMap= function (cb){
+//     let result =[]
+//     for(let i=0; i<this.length; i++){
+//      cb(this[i],i,this)
+
+//     }
+    
+//   }
+
+//   let arr =[2,3,4,5,6,7,8,9]
+
+//   let data = arr.newMap((a,b,c)=>{
+   
+//     console.log(a);
+    
+
+//   } )
+//      console.log(data);
+     
+//   return (
+//     <div>App
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+//rudece  custom fun
+
+// import React from 'react'
+// const App = () => {
+  //   let arr=[1,2,3,4,5]
+  //   let data = arr.reduce((a,b,c,d)=>{
+  //     return a+b
+  //   },10)
+  //    console.log(data);
+  //   return (
+  //     <div>App</div>
+  //   )
+  // }
+  // export default App
+
+  import React from 'react'
+  
+  const App = () => {
+    Array.prototype.myReduce= function (cb,initialData){
+      let sum = initialData
+      for(let i=0;i<this.length;i++){
+        sum = cb(sum,this[i])
+      }
+      return sum
+    }
+         let arr=[1,2,3,4,5]
+         let data = arr.reduce((a,b,c,d)=>{
+                 return a+b
+          },10)
+     console.log(data);
+
+    return (
+      <div>
+        <h1>{data}</h1>
+
+  
+      </div>
+    )
+  }
+  
+  export default App
+
+   
