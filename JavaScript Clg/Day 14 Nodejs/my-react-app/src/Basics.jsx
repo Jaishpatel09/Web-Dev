@@ -413,13 +413,10 @@ const Basics = () => {
 ]
   return (
     <div>
-      <button>uij</button>
         {
           
           students.map((student,index)=>{
-            function fun1(){
-              return 1
-            }
+          
             return(
               <div key={index}>
             <h2>
@@ -428,7 +425,7 @@ const Basics = () => {
             <h3>
               Age :{student.age}
             </h3>
-            <button onClick={()=>{fun1}}>hii</button>
+            <button>add</button>
             </div>
           )
         })

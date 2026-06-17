@@ -445,18 +445,18 @@
 //Basicss
 
 
-// import React from 'react'
-// import Basics from './Basics'
+import React from 'react'
+import Basics from './Basics'
 
-// const App = () => {
-//   return (
-//     <div>
-//       <Basics/>
-//     </div>
-//   )
-// }
+const App = () => {
+  return (
+    <div>
+      <Basics/>
+    </div>
+  )
+}
 
-// export default App
+export default App
 
 
 
@@ -787,31 +787,31 @@
   // }
   // export default App
 
-  import React from 'react'
+  // import React from 'react'
   
-  const App = () => {
-    Array.prototype.myReduce= function (cb,initialData){
-      let sum = initialData
-      for(let i=0;i<this.length;i++){
-        sum = cb(sum,this[i])
-      }
-      return sum
-    }
-         let arr=[1,2,3,4,5]
-         let data = arr.reduce((a,b,c,d)=>{
-                 return a+b
-          },10)
-     console.log(data);
+  // const App = () => {
+  //   Array.prototype.myReduce= function (cb,initialData){
+  //     let sum = initialData
+  //     for(let i=0;i<this.length;i++){
+  //       sum = cb(sum,this[i])
+  //     }
+  //     return sum
+  //   }
+  //        let arr=[1,2,3,4,5]
+  //        let data = arr.reduce((a,b,c,d)=>{
+  //                return a+b
+  //         },10)
+  //    console.log(data);
 
-    return (
-      <div>
-        <h1>{data}</h1>
+  //   return (
+  //     <div>
+  //       <h1>{data}</h1>
 
   
-      </div>
-    )
-  }
+  //     </div>
+  //   )
+  // }
   
-  export default App
+  // export default App
 
    
