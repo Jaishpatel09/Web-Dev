@@ -425,7 +425,7 @@ const Basics = () => {
             <h3>
               Age :{student.age}
             </h3>
-            <button>add</button>
+            <button>Add</button>
             </div>
           )
         })
