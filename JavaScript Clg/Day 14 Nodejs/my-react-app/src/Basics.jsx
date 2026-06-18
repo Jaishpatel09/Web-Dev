@@ -402,6 +402,54 @@
 
 
 
+// import React from 'react'
+
+// const Basics = () => {
+//   const students = [
+//   {name: "Jatin", age: 20},
+//   {name: "Yash", age: 21},
+//   {name: "Vinay", age: 22},
+//   {name: "Gyan", age: 19}
+// ]
+//   return (
+//     <div>
+//        <h1>Student List</h1>
+//        <h3> Total Student: {students.length}</h3>
+//         {
+       
+//           students.map((student,index)=>{
+          
+//             return(
+//               <div key={index}>
+               
+//             <h2>
+//               Name :{student.name}
+//             </h2>
+//             <h3>
+//               Age :{student.age}
+//             </h3>
+//             <button>View Details</button>
+//             </div>
+//           )
+//         })
+// }
+//   </div>
+// )
+// }
+            
+// export default Basics
+
+
+
+
+
+
+
+
+
+
+
+//Filter function
 import React from 'react'
 
 const Basics = () => {
@@ -411,26 +459,15 @@ const Basics = () => {
   {name: "Vinay", age: 22},
   {name: "Gyan", age: 19}
 ]
+ let filterr = students.filter((std)=>{
+  return std.age>=20
+ })
+ console.log(filterr);
+ 
   return (
     <div>
-        {
-          
-          students.map((student,index)=>{
-          
-            return(
-              <div key={index}>
-            <h2>
-              Name :{student.name}
-            </h2>
-            <h3>
-              Age :{student.age}
-            </h3>
-            <button>Add</button>
-            </div>
-          )
-        })
-      }
-  </div>
+       
+    </div>
 )
 }
             
