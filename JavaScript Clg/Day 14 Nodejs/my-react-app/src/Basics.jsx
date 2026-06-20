@@ -541,17 +541,45 @@
 
 //Props 
 
+// import React from 'react'
+// import Student from './Student'
+
+// const Basics = () => {
+//   return (
+//     <div>
+//       <Student name="Jaish" age={20}/>
+//       <Student name="Jatin" age={21}/>
+//       <Student name="Yash" age={19}/>
+//       <Student name="Vinay" age={16}/>
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+
 import React from 'react'
 import Student from './Student'
-
 const Basics = () => {
+  const students = [
+  { name: "Jaish", age: 20 },
+  { name: "Yash", age: 21 },
+  { name: "Vinay", age: 22 }
+]
   return (
     <div>
-      <Student name="Jaish" age={20}/>
+      {
+        students.map((student,index)=>(
+             <Student
+              key={index}
+              name = {student.name}
+              age = {student.age}
+             />
+        ))
+      }
     </div>
   )
 }
 
 export default Basics
-
-
