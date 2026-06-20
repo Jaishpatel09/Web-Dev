@@ -489,49 +489,69 @@
 
 // input Search
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// const Basics = () => {
+//   const students = [
+//   {name: "Jatin", age: 20},
+//   {name: "Yash", age: 21},
+//   {name: "Vinay", age: 22},
+//   {name: "Gyan", age: 19},
+//   {name: "Anshul", age: 15}
+
+// ]
+
+//  let [search,setSearch] = useState('')
+
+//  console.log(search);
+
+//  const filteredStudents = students.filter((student) => {
+//   return student.name.includes(search)
+// })
+ 
+ 
+//   return (
+//     <div>
+       
+       
+//         <h1>Total Student : {filteredStudents.length}</h1>
+//         <input
+//         onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder='Enter Your Name' />
+//       {filteredStudents.length ===0 ? <h2>Student Not Found</h2> :
+      
+//         filteredStudents.map((student,index)=>{
+//           return(
+//             <div key={index}>
+//               <h2>Name : {student.name}</h2>
+//               <h3>Age : {student.age}</h3>
+//             </div>
+//           )
+//         })
+//       }
+      
+        
+//     </div>
+// )
+// }
+            
+// export default Basics
+
+
+
+
+//Props 
+
+import React from 'react'
+import Student from './Student'
 
 const Basics = () => {
-  const students = [
-  {name: "Jatin", age: 20},
-  {name: "Yash", age: 21},
-  {name: "Vinay", age: 22},
-  {name: "Gyan", age: 19},
-  {name: "Anshul", age: 15}
-
-]
-
- let [search,setSearch] = useState('')
-
- console.log(search);
-
- const filteredStudents = students.filter((student) => {
-  return student.name.includes(search)
-})
- 
- 
   return (
     <div>
-       
-       
-        <h1>Total Student : {filteredStudents.length}</h1>
-        <input
-        onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder='Enter Your Name' />
-      {
-        filteredStudents.map((student,index)=>{
-          return(
-            <div key={index}>
-              <h2>Name : {student.name}</h2>
-              <h3>Age : {student.age}</h3>
-            </div>
-          )
-        })
-      }
-        
+      <Student name="Jaish" age={20}/>
     </div>
-)
+  )
 }
-            
+
 export default Basics
 
 
