@@ -589,17 +589,48 @@
 
 //Form Handling
 
+// import React, { useState } from 'react'
+
+// const Basics = () => {
+//   let [name,setName]= useState('')
+//   let [submit,setSubmit] = useState('')
+//   return (
+//     <div>
+//       <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}} />
+       
+//        <button onClick={()=>{setSubmit(name)}}>Submit</button>
+
+//        <button onClick={()=>{setName(''), setSubmit('')}}>Clear</button>
+//       <h1>{submit}</h1>
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+//With alert mssg
+
 import React, { useState } from 'react'
 
 const Basics = () => {
-  let [name,setName]= useState('')
-  let [submit,setSubmit] = useState('')
+  let [name,setName] = useState('')
+  let [submitname,setSubmitname] = useState('')
+
+  const submmit =()=>{
+      if(name === ''){
+        alert ("Please enter text")
+      }else{
+        setSubmitname(name)
+      }
+  }
+
   return (
     <div>
-      <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}} />
-       
-       <button onClick={()=>{setSubmit(name)}}>Submit</button>
-      <h1>{submit}</h1>
+      <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}}/>
+      <button onClick={()=>{submmit()}}>Submit</button>
+      <button onClick={()=>{setName(''),setSubmitname('')}}>Clear</button>
+      <h1>{submitname}</h1>
     </div>
   )
 }
