@@ -559,25 +559,47 @@
 
 
 
-import React from 'react'
-import Student from './Student'
+//props   
+
+// import React from 'react'
+// import Student from './Student'
+// const Basics = () => {
+//   const students = [
+//   { name: "Jaish", age: 20 },
+//   { name: "Yash", age: 21 },
+//   { name: "Vinay", age: 22 }
+// ]
+//   return (
+//     <div>
+//       {
+//         students.map((student,index)=>(
+//              <Student
+//               key={index}
+//               name = {student.name}
+//               age = {student.age}
+//              />
+//         ))
+//       }
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+//Form Handling
+
+import React, { useState } from 'react'
+
 const Basics = () => {
-  const students = [
-  { name: "Jaish", age: 20 },
-  { name: "Yash", age: 21 },
-  { name: "Vinay", age: 22 }
-]
+  let [name,setName]= useState('')
+  let [submit,setSubmit] = useState('')
   return (
     <div>
-      {
-        students.map((student,index)=>(
-             <Student
-              key={index}
-              name = {student.name}
-              age = {student.age}
-             />
-        ))
-      }
+      <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}} />
+       
+       <button onClick={()=>{setSubmit(name)}}>Submit</button>
+      <h1>{submit}</h1>
     </div>
   )
 }
