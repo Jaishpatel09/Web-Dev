@@ -611,26 +611,48 @@
 
 //With alert mssg
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// const Basics = () => {
+//   let [name,setName] = useState('')
+//   let [submitname,setSubmitname] = useState('')
+
+//   const submmit =()=>{
+//       if(name === ''){
+//         alert ("Please enter text")
+//       }else{
+//         setSubmitname(name)
+//       }
+//   }
+
+//   return (
+//     <div>
+//       <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}}/>
+//       <button onClick={()=>{submmit()}}>Submit</button>
+//       <button onClick={()=>{setName(''),setSubmitname('')}}>Clear</button>
+//       <h1>{submitname}</h1>
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+// API Calling
+
+import React, { useEffect, useState } from 'react'
 
 const Basics = () => {
-  let [name,setName] = useState('')
-  let [submitname,setSubmitname] = useState('')
+  let [users,setusers] = useState([])
 
-  const submmit =()=>{
-      if(name === ''){
-        alert ("Please enter text")
-      }else{
-        setSubmitname(name)
-      }
-  }
-
+  useEffect(()=>{
+    fetch("https://jsonplaceholder.typicode.com/users")
+  },[])
+  console.log(users);
+  
   return (
     <div>
-      <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}}/>
-      <button onClick={()=>{submmit()}}>Submit</button>
-      <button onClick={()=>{setName(''),setSubmitname('')}}>Clear</button>
-      <h1>{submitname}</h1>
+
     </div>
   )
 }

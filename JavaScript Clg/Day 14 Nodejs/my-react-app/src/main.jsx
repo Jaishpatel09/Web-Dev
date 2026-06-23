@@ -12,13 +12,13 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
     {/* <Context.Provider value={{store,dispatch}}> */}
     {/* <Context> */}
    <App/>
    {/* </Context> */}
     {/* </Context.Provider> */}
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
     
     
   </StrictMode>,
