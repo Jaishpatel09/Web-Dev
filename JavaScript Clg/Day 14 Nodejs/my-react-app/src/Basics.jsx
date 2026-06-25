@@ -641,17 +641,41 @@
 // API Calling
 
 import React, { useEffect, useState } from 'react'
+import './Basics.css'
 
 const Basics = () => {
   let [users,setusers] = useState([])
 
   useEffect(()=>{
     fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>{
+      return response.json()
+    }).then((data)=>{
+      setusers(data)
+      // console.log(data);
+      
+    })
   },[])
-  console.log(users);
+  
   
   return (
-    <div>
+    <div id='contain'>
+        {
+        users.map((user) => {
+          return (
+            <div id='Dataa' key={user.id}>
+              <h1>ID:{user.id}</h1>
+            <h2>Name: 
+              {user.name}
+            </h2>
+            <h3>User Name:{user.username}</h3>
+            <h4>Address : {user.address.street}</h4>
+            
+            </div>
+          )
+        })
+      }
+
 
     </div>
   )

@@ -148,3 +148,22 @@ body {
     font-family: cursive;
 } */
 
+
+/* API  Data fetching*/
+
+#contain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+#Dataa{
+    background-color: rgb(254, 229, 229);
+    height: auto;
+    width: 240px;
+    border-radius: 11px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
