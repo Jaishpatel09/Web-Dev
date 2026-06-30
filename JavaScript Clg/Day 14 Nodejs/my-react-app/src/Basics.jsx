@@ -203,7 +203,7 @@
 //       {/* <h1>{user.length}</h1> */}
 //       <input id='inp' type="text" placeholder='Enter Username'
 //         onChange={(e) => setUser(e.target.value)} />
-      
+
 //         {
 //           user.length > 0 &&
 //             (
@@ -214,7 +214,7 @@
 //                   : <h2 id='long'>Username Too Long</h2>
 //             )
 //         }
-      
+
 
 //     </div>
 //   )
@@ -233,7 +233,7 @@
 //   return <h3>Base</h3>;
 // }
 //  export default Basics
-  
+
 //useEffect
 
 // import React, { useState, useEffect } from 'react'
@@ -267,7 +267,7 @@
 //   let [count,setCount] = useState(0)
 //    useEffect(()=>{
 //     console.log("effect Changed");
-    
+
 //    })
 //   return (
 //     <div>
@@ -279,7 +279,7 @@
 // }
 
 // export default Basics
-   
+
 
 //Title Counter
 
@@ -384,7 +384,7 @@
 //         {
 //           students.map((student,index)=>{
 //             return(
-            
+
 //               <h3 key={index}>{student.name} - {student.age} </h3>
 //             )
 //           })
@@ -416,12 +416,12 @@
 //        <h1>Student List</h1>
 //        <h3> Total Student: {students.length}</h3>
 //         {
-       
+
 //           students.map((student,index)=>{
-          
+
 //             return(
 //               <div key={index}>
-               
+
 //             <h2>
 //               Name :{student.name}
 //             </h2>
@@ -436,7 +436,7 @@
 //   </div>
 // )
 // }
-            
+
 // export default Basics
 
 
@@ -465,11 +465,11 @@
 //   return std.age>=20
 //  })
 //  console.log(filterr);
- 
+
 //   return (
 //     <div>
 //        {
-        
+
 
 //         filterr.map((student, index)=>{
 //           return(
@@ -483,7 +483,7 @@
 //     </div>
 // )
 // }
-            
+
 // export default Basics
 
 
@@ -508,17 +508,17 @@
 //  const filteredStudents = students.filter((student) => {
 //   return student.name.includes(search)
 // })
- 
- 
+
+
 //   return (
 //     <div>
-       
-       
+
+
 //         <h1>Total Student : {filteredStudents.length}</h1>
 //         <input
 //         onChange={(e)=>{setSearch(e.target.value)}} type="text" placeholder='Enter Your Name' />
 //       {filteredStudents.length ===0 ? <h2>Student Not Found</h2> :
-      
+
 //         filteredStudents.map((student,index)=>{
 //           return(
 //             <div key={index}>
@@ -528,12 +528,12 @@
 //           )
 //         })
 //       }
-      
-        
+
+
 //     </div>
 // )
 // }
-            
+
 // export default Basics
 
 
@@ -597,7 +597,7 @@
 //   return (
 //     <div>
 //       <input placeholder='Enter your text' type="text" onChange={(e)=>{setName(e.target.value)}} />
-       
+
 //        <button onClick={()=>{setSubmit(name)}}>Submit</button>
 
 //        <button onClick={()=>{setName(''), setSubmit('')}}>Clear</button>
@@ -640,43 +640,67 @@
 
 // API Calling
 
-import React, { useEffect, useState } from 'react'
-import './Basics.css'
+// import React, { useEffect, useState } from 'react'
+// import './Basics.css'
+
+// const Basics = () => {
+//   let [users,setusers] = useState([])
+
+//   useEffect(()=>{
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//     .then((response)=>{
+//       return response.json()
+//     }).then((data)=>{
+//       setusers(data)
+//       // console.log(data);
+
+//     })
+//   },[])
+
+
+//   return (
+//     <div id='contain'>
+//         {
+//         users.map((user) => {
+//           return (
+//             <div id='Dataa' key={user.id}>
+//               <h1>ID:{user.id}</h1>
+//             <h2>Name: 
+//               {user.name}
+//             </h2>
+//             <h3>User Name:{user.username}</h3>
+//             <h4>Address : {user.address.street}</h4>
+
+//             </div>
+//           )
+//         })
+//       }
+
+
+//     </div>
+//   )
+// }
+
+// export default Basics
+
+
+
+//useState
+
+import React, { useState } from 'react'
 
 const Basics = () => {
-  let [users,setusers] = useState([])
+  let [count, setCount] = useState(0)
 
-  useEffect(()=>{
-    fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response)=>{
-      return response.json()
-    }).then((data)=>{
-      setusers(data)
-      // console.log(data);
-      
-    })
-  },[])
-  
-  
+  function inCount(){
+    setCount(count+1)
+    console.log(count);
+    
+  }
   return (
-    <div id='contain'>
-        {
-        users.map((user) => {
-          return (
-            <div id='Dataa' key={user.id}>
-              <h1>ID:{user.id}</h1>
-            <h2>Name: 
-              {user.name}
-            </h2>
-            <h3>User Name:{user.username}</h3>
-            <h4>Address : {user.address.street}</h4>
-            
-            </div>
-          )
-        })
-      }
-
-
+    <div>
+      <h1>{count}</h1>
+      <button onClick={()=>{inCount()}}>Increase</button>
     </div>
   )
 }
