@@ -640,69 +640,72 @@
 
 // API Calling
 
-// import React, { useEffect, useState } from 'react'
-// import './Basics.css'
-
-// const Basics = () => {
-//   let [users,setusers] = useState([])
-
-//   useEffect(()=>{
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//     .then((response)=>{
-//       return response.json()
-//     }).then((data)=>{
-//       setusers(data)
-//       // console.log(data);
-
-//     })
-//   },[])
-
-
-//   return (
-//     <div id='contain'>
-//         {
-//         users.map((user) => {
-//           return (
-//             <div id='Dataa' key={user.id}>
-//               <h1>ID:{user.id}</h1>
-//             <h2>Name: 
-//               {user.name}
-//             </h2>
-//             <h3>User Name:{user.username}</h3>
-//             <h4>Address : {user.address.street}</h4>
-
-//             </div>
-//           )
-//         })
-//       }
-
-
-//     </div>
-//   )
-// }
-
-// export default Basics
-
-
-
-//useState
-
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import './Basics.css'
 
 const Basics = () => {
-  let [count, setCount] = useState(0)
+  let [users,setusers] = useState([])
+  let [loading,setLoading] = useState(true)
 
-  function inCount(){
-    setCount(count+1)
-    console.log(count);
-    
-  }
+  useEffect(()=>{
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>{
+      return response.json()
+    }).then((data)=>{
+      setusers(data)
+      setLoading(false)
+
+    })
+  },[])
+
+
   return (
-    <div>
-      <h1>{count}</h1>
-      <button onClick={()=>{inCount()}}>Increase</button>
+    <div id='contain'>
+        {
+          loading ? (<h1>Loading....</h1>):(
+        users.map((user) => {
+          return (
+            <div id='Dataa' key={user.id}>
+              <h1>ID:{user.id}</h1>
+            <h2>Name: 
+              {user.name}
+            </h2>
+            <h3>User Name:{user.username}</h3>
+            <h4>Address : {user.address.street}</h4>
+
+            </div>
+          )
+        })
+      )
+      }
+
+
     </div>
   )
 }
 
 export default Basics
+
+
+
+//useState
+
+// import React, { useState } from 'react'
+
+// const Basics = () => {
+//   let [count, setCount] = useState(0)
+
+//   function inCount(){
+//     setCount(count+1)
+//     console.log(count);
+    
+//   }
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <button onClick={()=>{inCount()}}>Increase</button>
+//     </div>
+//   )
+// }
+
+// export default Basics
