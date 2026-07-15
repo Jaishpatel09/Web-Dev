@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <h1>Scope</h1>
+
+<script>
+    //Global Variable
+    let name = "Jaish"
+  function showName(){
+    console.log(name);
+}   
+ showName() ;   
+
+
+ let city = "Jabalpur"
+ function showCity(){
+    console.log(city);
+    
+ }
+ showCity();
+   //Function Variable
+ function tests(){
+    let x=22;
+    console.log(x); // x is only accessible inside the function body 
+    
+ }  
+ tests() 
+   // console.log(x); //here x is not defined
+    
+</script>    
+</body>
+</html>

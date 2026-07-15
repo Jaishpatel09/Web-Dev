@@ -4,7 +4,7 @@ import './App.css'
 const Ai_Intrigration = () => {
   let [searchData,setsearchData] = useState('')
   let [response,setResponse] = useState('')
-    // let genAi = new GoogleGenerativeAI("")
+    let genAi = new GoogleGenerativeAI("")
 
     async function search(){
       try{
@@ -13,6 +13,8 @@ const Ai_Intrigration = () => {
         })
         let res = await model.generateContent(searchData)
         setResponse(res.response.text());
+        console.log(response);
+        
         
       }catch(err){
         console.log(err);

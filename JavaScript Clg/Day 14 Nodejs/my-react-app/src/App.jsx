@@ -445,18 +445,18 @@
 //Basicss
 
 
-import React from 'react'
-import Basics from './Basics.jsx'
+// import React from 'react'
+// import Basics from './Basics.jsx'
 
-const App = () => {
-  return (
-    <div>
-      <Basics/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <Basics/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -817,18 +817,18 @@ export default App
    
 
 
-//   import React from 'react'
-// import Ai_Intrigration from './Ai_Intigration'
+  import React from 'react'
+import Ai_Intrigration from './Ai_Intigration'
   
-//   const App = () => {
-//     return (
-//       <div>
-//         <Ai_Intrigration/>
-//       </div>
-//     )
-//   }
+  const App = () => {
+    return (
+      <div>
+        <Ai_Intrigration/>
+      </div>
+    )
+  }
   
-//   export default App
+  export default App
 
 
 // React Router Dom
