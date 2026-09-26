@@ -5,81 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex-6</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            /* background-color: antiquewhite; */
-        }
-
-        .new ul {
-            display: flex;
-            padding-top: 15px;
-        }
-
-        .new ul {
-            list-style: none;
-            gap: 44px;
-        }
-
-        .logo img {
-            height: 39px;
-        }
-
-        .first {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            margin: 63px;
-        }
-
-        .first span {
-            font-size: 35px;
-        }
-
-        .first img {
-            width: 64px;
-            margin: 0 23px;
-        }
-
-        .btn {
-            height: 46px;
-            width: 292px;
-            background-color: #00b6d1;
-            border: 0px;
-            border-radius: 6px;
-            color: white;
-            font-weight: 700;
-        }
-
-        .flex {
-            display: flex;
-            justify-content: center;
-            gap: 17px;
-
-        }
-
-        .flex :nth-child(2) {
-            font-weight: 600;
-            font-size: 31px;
-            color: #737373;
-        }
-        .flex :last-child{
-                color: #737373;
-    margin: 14px;
-        }
-        .flex img{
-            margin: -9px;
-        }
-    </style>
+   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -121,8 +47,20 @@
             <section class="second">
                 <div class="flex">
                     <img src="UE_logo_icon_white_bkg_256x256-3-1.png">
-                    <div>Download UltraEdit</div>
-                    <div>v2025.2.0.24 (released 2026-04-10) | Latest changes </div>
+                    <span>Download UltraEdit</span>
+                    <span>v2025.2.0.24 (released 2026-04-10) | Latest changes </span>
+                </div>
+                <div class="grid">
+                    <div class="item">
+                        <div class="language">English</div>
+                        <button class="btn_blue">Download 32-bit</button>
+                        <button class="btn_green">Download 64-bit</button>
+                    </div>
+                    <div class="item">
+                        <div class="language">Deutsch</div>
+                        <button class="btn_blue">Download 32-bit</button>
+                        <button class="btn_green">Download 64-bit</button>
+                    </div>
                 </div>
             </section>
         </main>
