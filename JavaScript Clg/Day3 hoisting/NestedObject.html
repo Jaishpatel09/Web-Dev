@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Nested Object</h1>
+    <script>
+        let student = {
+            name: "Jaish Patel",
+            age: 20,
+            address: {
+                city: "Jabalpur",
+                state: "MP"
+            }
+        };
+
+        console.log(student["address"]["city"]);
+        console.log(student.address.state);
+
+
+
+        let user = {
+            name: "Rahul",
+            age: 21,
+            group:"A"
+        };
+
+        // delete user.age;
+       delete user.group;
+        console.log(user.age);
+        console.log(user.group);
+
+    </script>
+</body>
+
+</html>
