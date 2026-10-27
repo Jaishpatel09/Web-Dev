@@ -6,8 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <button>add</button>
-    <script src="index.js">
+    <h1>Employee Details</h1>
+    <script>
+        let employee={
+            name:"Amit",
+            salary: 25000
+
+        }
+        let {name: employeeName}=employee;
+        employee.salary=30000;
+        employee.department="IT"; //To add new property in object
+        // let {department ="IT"}= employee; //For default value
+
+        console.log(employeeName);
+        console.log(employee.salary);
+        console.log(employee.department);
+        
+        
         
     </script>
 </body>
