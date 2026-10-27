@@ -10,24 +10,36 @@
 <body>
     <h1>Object Destructuring</h1>
     <script>
-        let student = {
+        // let student = {
+        //     name: "Jaish",
+        //     age: 20,
+        //     city: "Jabalpur"
+        // };
+
+        // let { name, age } = student;
+        // console.log(name);
+        // console.log(age);
+
+        // let { name: userName } = student;
+
+        // console.log(userName);
+
+
+        let user = {
             name: "Jaish",
-            age: 20,
-            city: "Jabalpur"
+            address: {
+                city: "Jabalpur"
+            }
         };
 
-        let {name ,age}=student;
-        console.log(name);
-        console.log(age);
+        let { name: username } = user;
+        user.address.city = "Bhopal";
 
-        let {name: userName}= student;
+        console.log(username);
+        console.log(user.address.city);
+        console.log(user.age);
 
-        console.log(userName);
-        
 
-        
-        
-        
     </script>
 </body>
 
