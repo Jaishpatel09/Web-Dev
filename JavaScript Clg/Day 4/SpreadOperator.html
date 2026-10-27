@@ -15,8 +15,24 @@
             age: 20
         };
 
-        let copy={...student};
-        console.log(copy);
+        // let copy={...student}; //now copy have all the properties of student
+        // console.log(copy);
+
+
+
+        // let updateStudent={//to add new property in new variable
+        //     ...student,
+        //     city:"Jabalpur"
+        // };
+
+
+        let updateStudent={ //to update existing property
+            ...student,
+            age: 21
+        };
+
+        console.log(updateStudent);
+        
               
     </script>
 </body>
