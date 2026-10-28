@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+    <script>
+        let student={
+            name:"Jaish",
+            marks:75,
+            address:{
+                city:"Jabalpur"
+            }       
+        };
+
+        let updatedStudent={
+            ...student,
+            marks:90,
+            address:{
+                ...student.address,
+                city:"Bhopal"
+            }
+        }
+        console.log(student.marks);
+        console.log(updatedStudent.marks);
+        console.log(student.address.city);
+        console.log(updatedStudent.address.city);
+        
+        
+        
+        
+    </script>
+</body>
+</html>
