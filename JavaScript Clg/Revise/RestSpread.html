@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice Student Data</h1>
+    <script>
+        let student = {
+            name:"Jaish Patel",
+            marks:[70,80,90]
+        };  
+
+        function addMarks(...newMarks){
+           let allMarks = [...student.marks,...newMarks]
+            console.log(allMarks);
+        }
+        addMarks(95,85);
+        
+        let updatedStudent={
+            ...student,
+            marks:[70,80,90,95,85]
+        }
+
+        console.log(student.marks);
+        console.log(updatedStudent.marks);
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>
