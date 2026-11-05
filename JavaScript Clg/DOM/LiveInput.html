@@ -9,14 +9,17 @@
     <input type="text" placeholder="Enter your Name" id="username">
 
     <h1 id="preview"></h1>
+    
 
     <script>
         let input =document.getElementById("username");
         let heading =document.getElementById("preview");
         input.addEventListener("input", function(){
-           
-        heading.innerText= input.value;    
-           
+        if (input.value === "") {
+            heading.innerText="Your Name will appear here"
+        }   else{
+             heading.innerText= input.value;    
+        } 
         })
     </script>
 
