@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+
+    <input type="text"  id="username" placeholder="Enter Your Username">
+    <br>
+    <br/>
+
+    <input type="password" id="pass" placeholder="Enter Your Password">
+    <br><br/>
+    <button type="button" id="btn">Login</button>
+
+    <p id="message"></p>
+    <script>
+        let input =document.getElementById("username");
+        let password=document.getElementById("pass");
+        let button =document.getElementById("btn");
+        let message=document.getElementById("message");
+
+        button.addEventListener("click",function(){
+
+            let color ="red";
+
+            if (input.value.trim() ==="") {
+                message.innerText="Please enter your username!!";
+            }
+           else if (password.value.trim()==="") {
+                message.innerText="Please Enter Your Password!!"
+            } else if(password.value.trim().length < 6){
+                message.innerText ="Password must be at least 6 characters"
+            }
+             else {
+                message.innerText="Login Successful !!"
+                color="green"
+            }
+            message.style.color=color;
+        });
+
+        input.addEventListener("input" , function(){
+            message.innerText=""
+        });
+        password.addEventListener("input",function(){
+            message.innerText=""
+        });
+    </script>
+
+</body>
+</html>

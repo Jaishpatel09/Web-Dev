@@ -24,15 +24,22 @@
         let message=document.getElementById("message");
 
         button.addEventListener("click",function(){
+
+            let color ="red";
+
             if (input.value.trim() ==="") {
                 message.innerText="Please enter your username!!";
             }
            else if (password.value.trim()==="") {
                 message.innerText="Please Enter Your Password!!"
+            } else if(password.value.trim().length < 6){
+                message.innerText ="Password must be at least 6 characters"
             }
              else {
                 message.innerText="Login Successful !!"
+                color="green"
             }
+            message.style.color=color;
         });
     </script>
 
