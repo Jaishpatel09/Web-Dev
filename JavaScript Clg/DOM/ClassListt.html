@@ -13,19 +13,30 @@
 </head>
 <body>
     <h1 id="heading" >Hello Jaish!!</h1>
-    <button id="btn">Make Green</button>
-    <button id="2btn">Make Black</button>
+   <!-- Method 2 -->
+    <button id="btn">Toggle</button>
+
+
+    <!-- Method 1 -->
+    <!-- <button id="btn">Make Green</button>  
+    <button id="2btn">Make Black</button> -->
 
    <script>
     let heading =document.getElementById("heading");
+//Method 1
+    // let button=document.getElementById("btn");
+    // let button2=document.getElementById("2btn");
+    // button.addEventListener("click" ,function(){
+    //     heading.classList.add("green");
+    // });
+    // button2.addEventListener("click", function(){
+    //     heading.classList.remove("green");
+    // })
+
     let button=document.getElementById("btn");
-    let button2=document.getElementById("2btn");
-    button.addEventListener("click" ,function(){
-        heading.classList.add("green");
+    button.addEventListener("click", function(){
+        heading.classList.toggle("green");
     });
-    button2.addEventListener("click", function(){
-        heading.classList.remove("green");
-    })
    </script>
 </body>
 </html>

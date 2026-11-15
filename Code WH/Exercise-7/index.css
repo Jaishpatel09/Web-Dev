@@ -101,6 +101,7 @@
             border: none;
             border-radius: 7px;
             padding-bottom: 10px;
+            cursor: pointer;
         }
 
         .btn_green {
@@ -109,6 +110,7 @@
             background-color: #00ef14;
             border: none;
             border-radius: 7px;
+            cursor: pointer;
         }
 
         .language{
